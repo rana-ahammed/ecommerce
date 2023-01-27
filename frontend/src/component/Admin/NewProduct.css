@@ -1,0 +1,141 @@
+.new-product-container {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: rgb(221, 221, 221);
+	border-left: 1px solid rgb(0, 0, 0, 0.158);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.new-product-container h1 {
+	font: 300 2vmax "Roboto";
+	color: rgba(0, 0, 0, 0.733);
+	text-align: center;
+}
+
+.create-product-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 70%;
+	margin: auto;
+	padding: 3vmax;
+	width: 40vh;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+.create-product-form > div {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.create-product-form > div > input,
+.create-product-form > div > select,
+.create-product-form > div > textarea {
+	padding: 1vmax 4vmax;
+	padding-right: 1vmax;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.267);
+	border-radius: 4px;
+	font: 300 0.9vmax cursive;
+	outline: none;
+}
+
+.create-product-form > div > svg {
+	position: absolute;
+	transform: translateX(1vmax);
+	font-size: 1.6vmax;
+	color: rgba(0, 0, 0, 0.623);
+}
+
+#create-product-form-file > input {
+	display: flex;
+	padding: 0%;
+}
+
+#create-product-form-file > input::file-selector-button {
+	cursor: pointer;
+	width: 100%;
+	height: 5vh;
+	z-index: 2;
+	border: none;
+	margin: 0%;
+	font: 400 0.8vmax cursive;
+	transition: all 0.5s;
+	padding: 0 1vmax;
+	color: rgba(0, 0, 0, 0.623);
+	background-color: rgb(255, 255, 255);
+	box-sizing: border-box;
+}
+
+#create-product-form-file > input::file-selector-button:hover {
+	background-color: rgb(235, 235, 235);
+}
+
+#create-product-form-image {
+	width: 100%;
+	overflow: auto;
+	margin-top: 2vmax;
+}
+
+#create-product-form-image > img {
+	width: 3vmax;
+	margin: 0 0.5vmax;
+}
+
+#create-product-btn {
+	border: none;
+	background-color: tomato;
+	color: white;
+	width: 100%;
+	padding: 0.8vmax;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	font: 300 0.9vmax "Roboto";
+	transition: all 0.5s;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+#create-product-btn:hover {
+	background-color: rgb(179, 66, 46);
+}
+
+@media screen and (max-width: 600px) {
+	.new-product-container {
+		background-color: rgb(255, 255, 255);
+	}
+	.create-product-form {
+		padding: 5vmax;
+	}
+
+	.create-product-form > div > input,
+	.create-product-form > div > select,
+	.create-product-form > div > textarea {
+		padding: 2.5vmax 5vmax;
+		font: 300 1.7vmax cursive;
+	}
+
+	.create-product-form > div > svg {
+		font-size: 2.8vmax;
+	}
+
+	#create-product-form-file > input::file-selector-button {
+		height: 7vh;
+		font: 400 1.8vmax cursive;
+	}
+
+	#create-product-form-image > img {
+		width: 8vmax;
+	}
+
+	#create-product-btn {
+		font: 300 1.9vmax "Roboto";
+		padding: 1.8vmax;
+	}
+}

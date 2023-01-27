@@ -1,0 +1,51 @@
+.sidebar {
+	padding: 4vmax 0;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar > a:first-child {
+	padding: 0;
+}
+
+.sidebar > a > img {
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.sidebar > a > img:hover {
+	filter: drop-shadow(0 0 10px tomato);
+}
+
+.sidebar a {
+	text-decoration: none;
+	transition: all 0.5s;
+	padding: 2vmax;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar > div {
+	transition: all 0.5s;
+	padding: 2vmax;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar > div:hover {
+	color: tomato;
+	transform: scale(1.1);
+}
+
+.sidebar a:hover {
+	color: tomato;
+	transform: scale(1.1);
+}
+
+.sidebar a > p {
+	display: flex;
+	align-items: center;
+}
+
+.sidebar a > p > svg {
+	margin-right: 0.5vmax;
+}
